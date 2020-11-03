@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
@@ -43,9 +45,13 @@
     </div>
     <div data-key="76" class="key">
       <kbd>L</kbd>
-      <span class="sound">tink</span>
+      <span class="sound">closehat</span>
     </div>
   </div>
+
+  <button type="button" class="loop" onclick="playMusic('guitar')">Guitar loop</button>
+  <button type="button" class="loop" onclick="playMusic('electric')">Electric Loop</button>
+  <button type="button" class="loop" onclick="playMusic('sax')">Sax Loop</button>
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -55,12 +61,20 @@
   <audio data-key="72" src="sounds/ride.wav"></audio>
   <audio data-key="74" src="sounds/snare.wav"></audio>
   <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="76" src="sounds/closedHihat.wav"></audio>
 
-<script>
-
-</script>
+  <audio src="././sounds/loops/guitar.wav" id="guitar" loop></audio>
+  <audio src="././sounds/loops/electronic.wav" id="electric" loop></audio>
+  <audio src="././sounds/loops/sax.wav" id="sax" loop></audio>
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src='scripts.js'></script>
+
 </html>
