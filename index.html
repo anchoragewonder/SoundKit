@@ -47,13 +47,29 @@
       <kbd>L</kbd>
       <span class="sound">closehat</span>
     </div>
+
+    <div class="row">
+      <div data-key="67" class="key">
+        <kbd>C</kbd>
+        <span class="sound">crash</span>
+      </div>
+      <div data-key="86" class="key">
+        <kbd>V</kbd>
+        <span class="sound">powerout</span>
+      </div>
+      <div data-key="66" class="key">
+        <kbd>B</kbd>
+        <span class="sound">winddown</span>
+      </div>
+    </div>
+
   </div>
+
   <div class="loopCenter">
     <button id="guitarLoop" type="button" class="loop" onclick="playMusic('guitar')">Guitar loop</button>
     <button id="electricLoop" type="button" class="loop" onclick="playMusic('electric')">Electric Loop</button>
     <button id="saxLoop" type="button" class="loop" onclick="playMusic('sax')">Sax Loop</button>
   </div>
-
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -64,6 +80,10 @@
   <audio data-key="74" src="sounds/snare.wav"></audio>
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/closedHihat.wav"></audio>
+  <audio data-key="67" src="././sounds/fx/crash.wav"></audio>
+  <audio data-key="86" src="././sounds/fx/powerOut.wav"></audio>
+  <audio data-key="66" src="././sounds/fx/windDown.wav"></audio>
+
 
   <audio src="././sounds/loops/guitar.wav" id="guitar" loop></audio>
   <audio src="././sounds/loops/electronic.wav" id="electric" loop></audio>
