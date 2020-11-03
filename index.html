@@ -48,10 +48,12 @@
       <span class="sound">closehat</span>
     </div>
   </div>
+  <div class="loopCenter">
+    <button id="guitarLoop" type="button" class="loop" onclick="playMusic('guitar')">Guitar loop</button>
+    <button id="electricLoop" type="button" class="loop" onclick="playMusic('electric')">Electric Loop</button>
+    <button id="saxLoop" type="button" class="loop" onclick="playMusic('sax')">Sax Loop</button>
+  </div>
 
-  <button type="button" class="loop" onclick="playMusic('guitar')">Guitar loop</button>
-  <button type="button" class="loop" onclick="playMusic('electric')">Electric Loop</button>
-  <button type="button" class="loop" onclick="playMusic('sax')">Sax Loop</button>
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -67,8 +69,8 @@
   <audio src="././sounds/loops/electronic.wav" id="electric" loop></audio>
   <audio src="././sounds/loops/sax.wav" id="sax" loop></audio>
 
-
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 

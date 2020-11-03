@@ -19,11 +19,15 @@ allKeys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 function playMusic(instrument) {
     var music = document.getElementById(instrument);
+    var loop = document.getElementById(instrument + "Loop");
+
     if (music.paused) {
-        music.play()
+        music.play();
+        $(loop).addClass('playing');
     }
     else {
         music.pause();
-        audio.currentTime = 0;
+        music.currentTime = 0;
+        $(loop).removeClass('playing');
     }
 }
