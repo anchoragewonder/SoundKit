@@ -15,7 +15,8 @@ body,html {
   flex: 1;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 70vh;
+  flex-wrap: wrap;
 }
 
 .key {
@@ -38,8 +39,7 @@ body,html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;
+  width: 20rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.9);
@@ -52,7 +52,7 @@ body,html {
   align-items: center;
   justify-content: center;
   flex: 1;
-  min-height: 20vh;
+  min-height: 30vh;
   }
 
 .playing {
